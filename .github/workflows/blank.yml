@@ -1,0 +1,29 @@
+name: Daily Mail
+
+on:
+  schedule:
+    - cron: '30 4 * * *'  # 10 AM IST
+  workflow_dispatch:
+
+jobs:
+  send-mail:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Mail
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.EMAIL }}
+          password: ${{ secrets.PASSWORD }}
+          subject: SVMCM Scholarship Follow-up
+          body: |
+            Respected Sir/Madam,
+
+            This is a follow-up regarding my SVMCM Scholarship.
+            I have not received the amount yet.
+
+            Regards,
+            Subhankar Paul
+          to: dtet_wb@yahoo.co.in,helpdesk.svmcm-wb@gov.in
+          from: Subhankar Paul
