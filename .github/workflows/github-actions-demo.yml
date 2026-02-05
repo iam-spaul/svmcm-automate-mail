@@ -2,7 +2,7 @@ name: Daily Mail
 
 on:
   schedule:
-    - cron: '30 4 * * *'  # 10 AM IST
+    - cron: '* * * * *'  # 10 AM IST
   workflow_dispatch:
 
 jobs:
@@ -25,5 +25,5 @@ jobs:
 
             Regards,
             Subhankar Paul
-          to: dtet_wb@yahoo.co.in,helpdesk.svmcm-wb@gov.in
+          to: official.subhannkarpaul@gmail.com,helpdesk.svmcm-wb@gov.in
           from: Subhankar Paul
