@@ -2,7 +2,7 @@ name: Daily Mail
 
 on:
   schedule:
-    - cron: '* * * * *'  # 10 AM IST
+    - cron: '45 8 * * *'  # 10 AM IST
   workflow_dispatch:
 
 jobs:
