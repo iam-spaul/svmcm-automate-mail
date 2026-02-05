@@ -3,7 +3,7 @@ name: Daily Mail
 on:
   schedule:
     - cron: '*/5 * * * *'  # 10 AM IST
-  
+  workflow_dispatch:
 
 jobs:
   send-mail:
@@ -20,10 +20,40 @@ jobs:
           body: |
             Respected Sir/Madam,
 
-            This is a follow-up regarding my SVMCM Scholarship.
-            I have not received the amount yet.
+            I am writing this mail as a follow-up regarding the non-receipt of my 
+            Swami Vivekananda Merit-cum-Means (SVMCM) Scholarship amount 
+            for the academic year 2024–25 (Renewal).
 
-            Regards,
+            My application details are given below for your kind reference:
+
+            Applicant Name       : Subhankar Paul
+            Application ID       : WB3231698435650
+            Course               : MCA (2nd Year)
+            Institution          : University of Engineering & Management, Kolkata
+            Academic Year        : 2024–25 (Renewal)
+            Category             : General
+            Registered Mobile No : 8348485571
+            Registered Email ID  : psubhankar2019@gmail.com
+          
+            Bank Details:
+            Bank Name            : Central Bank of India
+            Branch               : Habra
+            IFSC Code            : CBIN0283416
+            Account Holder Name  : Subhankar Paul
+
+            I have successfully completed the renewal process on the SVMCM portal 
+            and all required documents were uploaded correctly. 
+            However, the scholarship amount has not yet been credited to my bank account.
+          
+            I kindly request you to please look into the matter and inform me 
+            if any further action or clarification is required from my side.
+          
+            I shall be highly grateful for your support.
+          
+            Thanking you.
+          
+            Yours sincerely,
             Subhankar Paul
-          to: official.subhankarpaul@gmail.com
+
+          to: dtet_wb@yahoo.co.in,helpdesk.svmcm-wb@gov.in,official.subhankarpaul@gmail.com
           from: Subhankar Paul
