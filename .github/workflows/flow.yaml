@@ -3,7 +3,7 @@ name: Daily Mail
 on:
   schedule:
     - cron: '*/5 * * * *'  # 10 AM IST
-  workflow_dispatch:
+  
 
 jobs:
   send-mail:
